@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BMICalculator">
-        <activity android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name=".CalculateBmiActivity"></activity>
+        <activity android:name=".UserDetailActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
