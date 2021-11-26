@@ -77,8 +77,6 @@ public class SignUpActivity extends AppCompatActivity {
                             UserInfo userinformation = new UserInfo(edtname.getText().toString(),"",edtemail.getText().toString(),edtpassword.getText().toString());
                             myRef.child(String.valueOf(randomNum)).setValue(userinformation);
                             // Sign in success
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            UserInfo info= (UserInfo) user.getProviderData();
                             Log.d("Message", "createUserWithEmail:success");
                             Toast.makeText(SignUpActivity.this,"User Registered Successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(SignUpActivity.this,UserDetailActivity.class));
