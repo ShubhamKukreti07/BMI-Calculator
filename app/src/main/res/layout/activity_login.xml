@@ -40,6 +40,7 @@
         android:paddingStart="8dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
+        android:singleLine="true"
         android:textSize="16sp" />
 
     <EditText
@@ -51,6 +52,7 @@
         android:background="@drawable/bordered_rect"
         android:hint="Enter Password"
         android:paddingStart="8dp"
+        android:singleLine="true"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="16sp" />

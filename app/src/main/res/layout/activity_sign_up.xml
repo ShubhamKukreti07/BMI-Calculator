@@ -37,6 +37,7 @@
         android:background="@drawable/bordered_rect"
         android:hint="Enter Name"
         android:paddingStart="8dp"
+        android:singleLine="true"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="16sp" />
@@ -48,6 +49,7 @@
         android:layout_marginEnd="30dp"
         android:background="@drawable/bordered_rect"
         android:hint="Enter Email"
+        android:singleLine="true"
         android:paddingStart="8dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -61,6 +63,7 @@
         android:layout_margin="30dp"
         android:background="@drawable/bordered_rect"
         android:hint="Enter Password"
+        android:singleLine="true"
         android:paddingStart="8dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"

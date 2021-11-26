@@ -3,6 +3,7 @@ package com.example.bmicalculator;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -67,15 +68,21 @@ public class SignUpActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             /***add data in realtime firebase database*/
+                            int max = 1000000000;
+                            int min = 1;
+                            int range = max - min + 1;
+                            int randomNum = (int)(Math.random() * range) + min;
                             FirebaseDatabase database = FirebaseDatabase.getInstance();
                             DatabaseReference myRef = database.getReference("users");
                             UserInfo userinformation = new UserInfo(edtname.getText().toString(),"",edtemail.getText().toString(),edtpassword.getText().toString());
-                            myRef.child(edtemail.getText().toString()).setValue(userinformation);
+                            myRef.child(String.valueOf(randomNum)).setValue(userinformation);
                             // Sign in success
                             FirebaseUser user = mAuth.getCurrentUser();
                             UserInfo info= (UserInfo) user.getProviderData();
                             Log.d("Message", "createUserWithEmail:success");
                             Toast.makeText(SignUpActivity.this,"User Registered Successfully", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(SignUpActivity.this,UserDetailActivity.class));
+                            finish();
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("Message", "createUserWithEmail:failure", task.getException());
