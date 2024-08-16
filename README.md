@@ -1,11 +1,7 @@
 # technojam-Android-task1
-Hello i am Shubham Kukreti. I am from delhi. I am pursuing B.Tech CSE with specialization in AI&ML from galgotias university.
-So telling you my few intrests except codindg are  singing /listening song and rapping, playing football, sketching and i play guitar too.
-From school only coding attracts my intrest and  i have learnt python in 12 standard .
-Now i think i can explore more through this platform technojam so i am ready to willingly put my efforts.
+Hello i am Shubham Kukreti. I am from delhi. I am pursuing B.Tech CSE with specialization in AI&ML from galgotias university
 
-
-so this is my very first time i am working with java and xml. 
+working with java and xml. 
 So i started this by checking the resoures provided with the task's link first.
 Then i started with my project-
 
