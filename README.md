@@ -1,5 +1,3 @@
-# technojam-Android-task1
-Hello i am Shubham Kukreti. I am from delhi. I am pursuing B.Tech CSE with specialization in AI&ML from galgotias university
 
 working with java and xml. 
 So i started this by checking the resoures provided with the task's link first.
